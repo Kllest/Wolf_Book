@@ -1,0 +1,139 @@
+*{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 10%;
+    height: 10%;
+}
+.body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    width: 115opx;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    padding: 5px;
+    width: 250px;
+    background-color: white;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+.container .card img{
+    transition: 0.5s;
+}
+.container .card h1{
+    font-size: 2rem;
+}
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+}
+.container .card .content{
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.container .card .content a{
+    position: relative;
+    padding: 10px 20px;
+    display: inline-block;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+.container .card .content:hover{
+    color: orange;
+    margin-top: 30px;
+    box-shadow:  2px 20px 25px #ffe600;
+    border-color: #ffe600;
+
+}
+
+/* aqui é a estilização do formulario */
+
+.section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-2{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: rgb(73, 73, 73);
+
+}
+form{
+    width: 100%;
+    max-width: 30rem;
+}
+label, input, textarea, button{
+    display: block;
+}
+input, textarea, button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+input, textarea{
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+}
+input:hover, input:focus, textarea:hover, textarea:focus{
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 0 0.3125rem #705600;
+}
+label{
+    margin-bottom: 0.5rem;
+    color: orange;
+}
+textarea{
+    min-height: 12.5rem;
+    resize: vertical;
+}
+button{
+    border: none;
+    border-radius: 99px;
+    color: rgb(255, 255, 255);
+    background: #ffa500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover,
+button:focus{
+    outline: none;
+    background:  #ff7300;
+}
+button:disabled{
+    cursor: not-allowed;
+    background: #705600;
+}

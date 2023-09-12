@@ -1,0 +1,202 @@
+.principal_header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    /* width: 100%; */
+    padding: 4%;   
+    align-items: center;
+    height: 20vh;
+    
+}
+.logo{
+    width: 100px;
+    height: 90px;
+}
+.logo-marca{
+ position: relative;
+ right: 40px;
+cursor: pointer;
+transition: 0.5s;
+}
+.logo-marca:hover{
+    transform: translateY(-10px);
+
+}
+.lista{
+    display: flex;
+    justify-content: space-between;   
+    list-style: none;
+    text-decoration: none;
+    font-size: 25PX;
+    font-family:'Roboto Condensed' ;
+}
+.lista, a{
+    color: orange;
+}
+.texto{
+    padding-top: 3%;
+    margin-left: 3%;
+    color: orange;
+}
+.barra{
+    position: relative;
+    right: 20%;
+}
+.pesquisa{
+    border-radius: 15px;
+    height: 40px;
+    border-style: none;
+    border: none;
+    margin-left: 15px;
+}
+::placeholder{
+    position: relative;
+    left: 20px;
+}
+/* .escritor ul li a{
+
+} */
+
+/* main-cards */
+
+.container-lib{
+    width: 1200px;
+    /* background-color: blue; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 70px;
+}
+.lib{
+    padding: 16px;
+    margin: 0 20px;
+    max-width: 200px;
+    height: 480px;
+    /* background-color: aqua; */
+    margin-top: 25px;
+}
+.img-lib{
+    width: 168px;
+    margin-top: -0.50rem;
+    /* background-color: brown; */
+    position: relative;
+    transition: 0.5s;
+
+}
+.imagem{
+    width: 168px;
+    height: 250px;
+}
+
+.butt{
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    margin-top: 5px;
+    background: orange;
+    color: white;
+    transition: 0.3s;
+    position: relative;
+}
+.butt:hover{
+    background: rgb(255, 94, 0);
+}
+.titulo{
+   /* background-color: green; */
+   margin-top: 2px;
+   padding: 5px;
+   max-width:168px;
+   overflow: hidden;
+   word-wrap: break-word;
+    /* max-height: 50px; */
+    font-size: 14px;
+    position: relative;
+    height: 130px;
+}
+.parag{
+    margin-top: 5px;
+    position: relative;
+}
+
+.lib:hover{
+    transform: translateY(-10px);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h3{
+    font-size: 15px;
+    padding-top: 5px;
+    color: rgb(196, 127, 0);
+    
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+
+    .principal_header {
+        flex-direction: column;
+        text-align: center;
+        width: 400px;
+        height: 170px;
+        align-items: center;
+    }
+    .logo{
+        margin-top: 0.100rem;
+        position: relative;
+        right: 28%;
+    }
+    .barra{
+        margin-left: 200px;
+       width: 280px; 
+       margin-top: -80px;
+       border-color: none;
+    }
+        .container-lib{
+           
+            margin-left: 10px;
+            margin-top: 25px;
+            overflow: hidden;
+            flex-wrap: wrap;
+            width: 400px;
+            /* background-color: blue; */
+            margin: 0px;
+        }
+        .lib{
+            max-width: 160px;
+            height: 400px;
+            pointer-events: none;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+           margin-right: 10px;
+            
+        }
+        .imagem{
+            margin-top: 15px;
+            width: 100px;
+            height: 150px;
+            position: relative;
+            left: 13px;
+        
+        }
+        .butt{
+            margin-top: 20px;
+            justify-content: center;
+            width: 140px;
+            position: relative;
+            right: 5px;
+            height: 2.2rem;
+            font-size: 20px;
+        }
+        .lista{
+            width: 400px ;
+            position: relative;
+            right: 70px;
+        }
+    
+}
+footer{ 
+    background-color: rgb(3, 130, 204);
+}
