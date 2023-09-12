@@ -167,11 +167,9 @@ h3{
         .lib{
             max-width: 160px;
             height: 400px;
-            pointer-events: none;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
            margin-right: 10px;
-            
         }
         .imagem{
             margin-top: 15px;
@@ -194,6 +192,8 @@ h3{
             width: 400px ;
             position: relative;
             right: 70px;
+
+        
         }
     
 }
