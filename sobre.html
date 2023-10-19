@@ -9,31 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/contato.css">
+    <link rel="stylesheet" href="./src/css/autors.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 <header class="cabecalho">
     <div>
-        <img src="" alt="logo-marca">
+        <img src="./src/img/lobo.png" alt="logo-marca" class="lobo-marca">
     </div>
         <nav class="list">
-            <ul class="list-sobre">
-                <li>
-                    <a href="">Nossa historia</a>
+
+            <ul class="list-sobre" >
+                <li >
+                    <a href="#pagina1" id="um">Nossa historia</a>
                 </li>
-                <li>
-                    <a href="">Contatos</a>
+                <li >
+                    <a href="#pagina2" id="dois">Contatos</a>
                 </li>
-                <li>
-                    <a href="#" onclick="loadContent('autores.html')">Autores</a>
+                <li >
+                    <a href="#pagina3" onclick="loadContent('autores.html')" id="tres">Autores</a>
                 </li>
             </ul>
         </nav>
 </header>
 <main>
-    <section>
+    <section class="primeiro" id="pagina1">
+       
         <article>
-            <div class="text1">
-                     <h2 style="justify-items: center;" class="hp">Quem somos?</h2>
+            <div class="text0">
+                     <h2 style="justify-items: center;" class="h">Quem somos?</h2>
                     
                 <p style="text-align: justify;">
                     A <strong style="color: orange;">Wolf Book</strong> surgiu a partir de um projeto escolar sobre sustentabilidade.
@@ -50,8 +60,8 @@
                 </p>
             </div>
 
-<div class="text2">
-    <h2 style="text-align: center;" class="hs">De que forma a plataforma e sustentavel?</h2>
+<div class="text0">
+    <h2 style="text-align: center;" class="h">De que forma a plataforma e sustentavel?</h2>
     <p style="text-align: justify;">
         Quando se fala em sustentabilidade, a primeira coisa em que pensamos é o meio
         ambiente, e não está errado. Porém, a questão da sustentabilidade abrange outros
@@ -63,8 +73,8 @@
         da hospedagem em servidores de baixo consumo de energia.
     </p>
 </div>
-<div class="text3">
-    <h2 style="text-align: center;" class="ht">A expansão do acesso à literatura</h2>
+<div class="text0">
+    <h2 style="text-align: center;" class="h">A expansão do acesso à literatura</h2>
     <p style="text-align: justify;">
         A literatura é uma arte poderosa; desde o seu surgimento, tem trazido
         transformações significativas para o mundo, como a conscientização e a disseminação
@@ -75,8 +85,8 @@
     </p>
 </div>
 
-<div class="text4">
-    <h2 style="text-align: center;" class="hq">Conclusão</h2>
+<div class="text0">
+    <h2 style="text-align: center;" class="h">Conclusão</h2>
     <p style="text-align: justify;">
         A Estante Virtual é mais do que uma biblioteca online; é o resultado do esforço
         conjunto de uma equipe dedicada a tornar a leitura acessível, sustentável e impactante.
@@ -90,10 +100,204 @@
         </article>
     </section> 
 
+        <section class="segunda" id="pagina2">
+          
+                <h1 class="principal">Entre em contato com a gente</h1>
+                <hr>
+         
+            <div class="container">
+                <div class="card">
+                    <div class="img">
+                        <img src="./src/icon/github.svg" alt="GitHub" class="imagem">
+                    </div>
+                    <h2>GitHub</h2>
+                    <div class="content">
+                        <p >Entre em contato pelo nosso GitHub</p>
+                        <a href="" id="link">Acessar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./src/icon/instagram.svg" alt=" Instagram" class="imagem">
+                    </div>
+                    <h2>Instagram</h2>
+                    <div class="content">
+                        <p >Entre em contato pelo nosso Instagram</p>
+                        <a href="https://www.instagram.com/wolfbook_oficial/" target="_blank" id="link">Acessar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./src/icon/Facebook_icon_(black).svg" class="imagem" alt="Facebook">
+                    </div>
+                    <h2>Facebook</h2>
+                    <div class="content">
+                        <p >Entre em contato pelo nosso Facebook</p>
+                        <a href="" id="link">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+                <section class="section">
+            <div class="body-2">
+                <form action="https://formsubmit.co/ajax/wolfbook226@gmail.com.br" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="mensagen">Mensagem</label>
+                    <textarea name="mensagen" id="mensagen" required placeholder="digite aqui"></textarea>
+                    <button type="submit" data-button>Enviar</button>
+                </form>
+                <script defer src="./src/js/formulario.js"></script>
+            </div>
+        </section>
+
+        </section>
+        
+
+        <section class="terceiro" id="pagina3">
+           
+                <div class="capsula">
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/emmanuelli-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                    
+                            <div class="color-div">
+                                <h2 class="nome">Emmanuelle</h2>
+                                <hr>
+                                <p  class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti, nobis similique obcaecati
+                                    tempora enim facilis fuga accusantium sit. Libero provident nam non asperiores cupiditate
+                                    perferendis dolores, aliquam error ipsam!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/rodrigo-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                    
+                            <div class="color-div">
+                                <span style="width: 100px;">
+                                    <h2 class="nome">Rodrigo</h2>
+                                    <hr>
+                                    <p  class="info"><em>"Meu nome é Rodrigo dos Santos, tenho 21 anos. Minha função no projeto é Analista de
+                                            Pesquisa. Este projeto tem um significado especial para mim, pois representa não apenas uma
+                                            oportunidade de crescimento profissional, mas também uma forma de contribuir para algo em
+                                            que acredito profundamente."</em></p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/viviane-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                            <div class="color-div">
+                                <h2 class="nome">Viviane</h2>
+                                <hr>
+                                <em>
+                                    <p  class="info">"Meu nome é Viviane de Assis Ramos, tenho 18 anos e faço parte da equipe de Mídia Social e
+                                        Publicidade deste projeto. Este projeto tem um significado especial para mim, pois me permite
+                                        demonstrar meu desempenho ao longo da minha vida. É uma jornada com um começo e um fim, uma
+                                        experiência única que, mesmo com obstáculos e complicações ao longo do caminho, não me fez
+                                        desistir do desenvolvimento do Wolf Book. No final, é sobre garantir que tudo dê certo para que,
+                                        no fim de tudo, possamos concluir esta jornada juntos."</p>
+                                </em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/kaua-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                            <div class="color-div">
+                                <h2 class="nome">Kauã</h2>
+                                <hr>
+                                <p  class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti, nobis similique obcaecati
+                                    tempora enim facilis fuga accusantium sit. Libero provident nam non asperiores cupiditate
+                                    perferendis dolores, aliquam error ipsam!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/carlos-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                            <div class="color-div">
+                                <h2 class="nome">Carlos</h2>
+                                <hr>
+                                <em>
+                                    <p  class="info">"Me chamo Carlos Eduardo do Nascimento Carneiro, tenho 18 anos e sou o Designer Gráfico deste
+                                        projeto. Este projeto marca o fim e o início de um novo ciclo em minha vida. Apesar dos diversos
+                                        problemas que surgiram durante a sua criação, não vou desistir e continuarei a lutar e me
+                                        esforçar para que tudo isso valha a pena no final, garantindo que o projeto seja bem-sucedido e
+                                        nos proporcione coisas boas em nosso futuro."</p>
+                                </em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/victoria-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                            <div class="color-div">
+                                <h2 class="nome">Victória</h2>
+                                <hr>
+                                <em>
+                                    <p  class="info">"Sou a Victória, tenho 17 anos, e minha função no projeto é auxiliar na contribuição para a
+                                        redação do trabalho (na área de pesquisa e informação). Este projeto é importante para mim, pois
+                                        proporciona diversas experiências. Tem como objetivo demonstrar a relevância do site e suas
+                                        vantagens, visando o desenvolvimento da leitura de forma mais eficaz."</p>
+                                </em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="itens">
+                            <div class="foto">
+                                <img src="./src/img/victoria-img.jpeg" alt="foto" class="im">
+                            </div>
+                    
+                    
+                            <div class="color-div">
+                                <h2 class="nome">emanuelli</h2>
+                                <hr>
+                                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti, nobis similique obcaecati
+                                    tempora enim facilis fuga accusantium sit. Libero provident nam non asperiores cupiditate
+                                    perferendis dolores, aliquam error ipsam!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+        </section>
 </main>
+<footer>
+    lll
+    lll
+    ll
+</footer>
 
 <script src="./src/js/script.js">
 </script>
+<script src="./src/js/sobre.js"></script>
+<script src="ligacao-section"></script>
 
 </main>
 </body>

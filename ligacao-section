@@ -1,0 +1,16 @@
+const links = document.querySelectorAll('nav a');
+    const pages = document.querySelectorAll('main > section');
+
+    links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            pages.forEach((page) => {
+                if (page.id === targetId) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+        });
+    });

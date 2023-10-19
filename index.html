@@ -4,296 +4,281 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wolf Book</title>
+
     <link rel="stylesheet" href="./src/css/index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="./src/css/reset.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ 
 </head>
 <body>
-    <header class="principal_header">
-        <div class="logo-marca">
-            <img src="./src/img/lobo.png" alt="logo marca" class="logo">
+    
+    
+
+    <script defer>
+        function clickMenu(){
+          if(Menu.style.display == 'block'){
+            Menu.style.display = 'none'
+          } else {
+            Menu.style.display = 'block'
+          }
+        }
+    </script>
+    
+
+    <header>
+        <div class="logo">
+            <img src="./src/img/lobo.png" alt="Logo" class="imag">
         </div>
+
         <div class="barra">
-            <input type="text" placeholder="pesquisar" alt="lupa" class="pesquisa">
+
+            <span class="material-symbols-outlined" id="lupa" >
+                search
+            </span>
+
+            <input type="search" name="" id="" placeholder="Pesquisar...">
         </div>
-            <menu class="">
-                <nav class="navegacao">
+            <span class="material-symbols-outlined" id="menu" onclick="clickMenu()">
+                menu
+                </span>
+                <menu id="Menu">
+        
                     <ul class="lista">
-                        <li>
-                            <a href="">Resenha</a>
+                        <li class="item"id="clicar">
+                            <a href="" >Resenha</a>
                         </li>
-                        <li>
+                        <li class="item"   id="clicar">
                             <a href="">Explore</a>
                         </li>
-                        <li>
-                            <a href="#">Sobre</a>
+                        <li class="item"  id="clicar">
+                            <a href="./sobre.html">Sobre</a>
                         </li>
                     </ul>
-                </nav>
-            </menu>
+                </menu>
     </header>
-
-
-    <!-- bloco de itens -->
-    
+   
     <main id="conteudo">
-        <div class="container-lib">
-            <div class="lib">
-    
-                    <div class="img-lib">
-                        <img src="./src/img/a-divina-comedia.jpg" alt="foto" class="imagem">
-                    </div>
+        <section class="container">
 
-                
-                        <div class="titulo">
-                            <h2 class="principal">Divina Comédia</h2>
-                            <h3>H.G Wells</h3>
-                            <h4>Gratuito</h4>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="https://kllest.github.io/Wolf_Book/src/img/a-divina-comedia.jpg" alt="foto" class="retrato">
                         </div>
-                        <p class="parag">Romance/terror</p>
-                            <a href="./src/img/a-divina-comedia..pdf" download><button class="butt">Ler</button></a>
-            </div>
-
-            <div class="lib">
-    
-                <div class="img-lib">
-                    <img src="./src/img/domCasmurro.jpg" alt="foto" class="imagem">
-                </div>
-
             
-                    <div class="titulo">
-                        <h2 class="principal">Dom Casmurro</h2>
-                        <h3>Machado de Assis</h3>
-                        <h4>Gratuito</h4>
-                    </div>
-                    <p class="parag">Romance</p>
-                        <a href="src/img/domcasmurrolivro.pdf" download><button class="butt">Ler</button></a>
-                </div>
-
-                <div class="lib">
-    
-                    <div class="img-lib">
-                        <img src="./src/img/oCortiço.jpg" alt="foto" class="imagem">
-                    </div>
-    
-                
-                        <div class="titulo">
-                            <h2 class="principal">O cortiço</h2>
-                            <h3>Aluísio Azevedo</h3>
-                            <h4>Gratuito</h4>
-                        </div>
-                        <p class="parag">Romance/terror</p>
-                            <a href="./src/img/ocortiçolivro.pdf" download=""><button class="butt">Ler</button></a>
-                    </div>
-
-                    <div class="lib">
-    
-                        <div class="img-lib">
-                            <img src="./src/img/hamlet.jpg" alt="foto" class="imagem">
-                        </div>
-        
-                    
-                            <div class="titulo">
-                                <h2 class="principal">Hamlet</h2>
-                                <h3>william shakespeare</h3>
+                            <div class="card-titulo">
+                                <h2>Divina Comédia</h2>
+                                <h3>Dante Alighieri</h3>
                                 <h4>Gratuito</h4>
                             </div>
-                            <p class="parag">Romance/terror</p>
-                                <a href="./src/img/hamlet.pdf" download=""><button class="butt">Ler</button></a>
+                            <p class="parag">Poesia</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/hamlet.jpg" alt="foto" class="retrato">
                         </div>
-
-                        <div class="lib">
-    
-                            <div class="img-lib">
-                                <img src="./src/img/OsMiseraveis.jpg" alt="foto" class="imagem">
-                            </div>
             
-                        
-                                <div class="titulo">
-                                    <h2 class="principal">Os Miseráveis</h2>
-                                    <h3>Victor Hugo</h3>
-                                    <h4>Gratuito</h4>
-                                </div>
-                                <p class="parag">Romance/terror</p>
-                                    <a href="./src/img/osmiseraveislivro.pdf" download=""><button class="butt">Ler</button></a>
+                            <div class="card-titulo">
+                                <h2 class="principal">Hamlet</h2>
+                                <h3>William Shakespeare</h3>
+                                <h4>Gratuito</h4>
                             </div>
+                            <p class="parag">Tragédia/Drama</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
 
-                            <div class="lib">
-    
-                                <div class="img-lib">
-                                    <img src="./src/img/Iracema.png" alt="foto" class="imagem">
-                                </div>
-                
-                            
-                                    <div class="titulo">
-                                        <h2 class="principal">Iracema</h2>
-                                        <h3>José de Alencar</h3>
-                                        <h4>Gratuito</h4>
-                                    </div>
-                                    <p class="parag">Romance/terror</p>
-                                        <a href="./src/img/iracemalivro.pdf" download=""><button class="butt">Ler</button></a>
-                                </div>
 
-                                <div class="lib">
-    
-                                    <div class="img-lib">
-                                        <img src="./src/img/iliada.jpg" alt="foto" class="imagem">
-                                    </div>
-                    
-                                
-                                        <div class="titulo">
-                                            <h2 class="principal">Ilíada</h2>
-                                            <h3>Homero</h3>
-                                            <h4>Gratuito</h4>
-                                        </div>
-                                        <p class="parag">Romance/terror</p>
-                                            <a href="./src/img/iliada.pdf"download><button class="butt">Ler</button></a>
-                                    </div>
+            </div>
 
-                                    <div class="lib">
-    
-                                        <div class="img-lib">
-                                            <img src="./src/img/a-odisseia-edicao-ilustrada.jpg" alt="foto" class="imagem">
-                                        </div>
-                        
-                                    
-                                            <div class="titulo">
-                                                <h2 class="principal">A Odisseia</h2>
-                                                <h3>Homero</h3>
-                                                <h4>Gratuito</h4>
-                                            </div>
-                                            <p class="parag">Romance/terror</p>
-                                                <a href="./src/img/arepublicalivro.pdf" download><button class="butt">Ler</button></a>
-                                        </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="https://www.baixelivros.com.br/wp-content/uploads/2018/12/domcasmurro.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">Dom Casmurro</h2>
+                                <h3> Machado de Assis</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Romance/Ficção</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+            
 
-                                        <div class="lib">
-    
-                                            <div class="img-lib">
-                                                <img src="./src/img/platao-a-republica.jpg" alt="foto" class="imagem">
-                                            </div>
-                            
-                                        
-                                                <div class="titulo">
-                                                    <h2 class="principal">A República</h2>
-                                                    <h3>Platão</h3>
-                                                    <h4>Gratuito</h4>
-                                                </div>
-                                                <p class="parag">Romance/terror</p>
-                                                    <a href="./src/img/arepublicalivro.pdf" download><button class="butt">Ler</button></a>
-                                            </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/a-odisseia-edicao-ilustrada.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">A Odisseia</h2>
+                                <h3>Homero</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Poesia/Épico</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
-                                            <div class="lib">
-    
-                                                <div class="img-lib">
-                                                    <img src="./src/img/VagaMusica.jpg" alt="foto" class="imagem">
-                                                </div>
-                                
-                                            
-                                                    <div class="titulo">
-                                                        <h2 class="principal">O paraíso Perdido</h2>
-                                                        <h3>John Milton</h3>
-                                                        <h4>Gratuito</h4>
-                                                    </div>
-                                                    <p class="parag">Romance/terror</p>
-                                                        <a href="./src/img/paraisoperdido.pdf" download=""><button class="butt">Ler</button></a>
-                                                </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/Iracema.png" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">Iracema
+                                </h2>
+                                <h3>José de Alencar</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Romance/Ficção</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
-                                                <div class="lib">
-    
-                                                    <div class="img-lib">
-                                                        <img src="./src/img/OsSertões.webp" alt="foto" class="imagem">
-                                                    </div>
-                                    
-                                                
-                                                        <div class="titulo">
-                                                            <h2 class="principal">Os Sertões</h2>
-                                                            <h3>Euclides da Cunha</h3>
-                                                            <h4>Gratuito</h4>
-                                                        </div>
-                                                        <p class="parag">Romance/terror</p>
-                                                            <a href="./src/img/ossertoeslivro.pdf" download><button class="butt">Ler</button></a>
-                                                    </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/oCortiço.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">O cortiço</h2>
+                                <h3>Aluísio Azevedo</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Romance/Naturalismo</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
-                                                    <div class="lib">
-    
-                                                        <div class="img-lib">
-                                                            <img src="./src/img/Macunaima.jpg" alt="foto" class="imagem">
-                                                        </div>
-                                        
-                                                    
-                                                            <div class="titulo">
-                                                                <h2 class="principal">Macunaíma</h2>
-                                                                <h3>Mario de Andrade</h3>
-                                                                <h4>Gratuito</h4>
-                                                            </div>
-                                                            <p class="parag">Romance/terror</p>
-                                                                <a href="./src/img/Macunaíma.pdf"><button class="butt">Ler</button></a>
-                                                        </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/revolucao-dos-bichos.webp" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal"> A Revolucao dos Bichos</h2>
+                                <h3>George Orwell</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Fábula/Fiçção</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
-                                                        <div class="lib">
-    
-                                                            <div class="img-lib">
-                                                                <img src="./src/img/TristeFimDePolicarpoQuaresma.jpg" alt="foto" class="imagem">
-                                                            </div>
-                                            
-                                                        
-                                                                <div class="titulo">
-                                                                    <h2 class="principal">Triste Fim De Policarpo Quaresma</h2>
-                                                                    <h3>Lima Barreto</h3>
-                                                                    <h4>Gratuito</h4>
-                                                                </div>
-                                                                <p class="parag">Romance/terror</p>
-                                                                    <a href="./src/img/tristefimdepolicarpoquaresmalivro.pdf"download><button class="butt">Ler</button></a>
-                                                            </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/Macunaima.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">Macunaíma</h2>
+                                <h3>Mário de Andrade</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Romance/Humor</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
-                                                            <div class="lib">
-    
-                                                                <div class="img-lib">
-                                                                    <img src="./src/img/revolucao-dos-bichos.webp" alt="foto" class="imagem">
-                                                                </div>
-                                                
-                                                            
-                                                                    <div class="titulo">
-                                                                        <h2 class="principal">A Revolução dos Bichos</h2>
-                                                                        <h3>George Orwell</h3>
-                                                                        <h4>Gratuito</h4>
-                                                                    </div>
-                                                                    <p class="parag">Romance/Ficção</p>
-                                                                        <a href="./src/img/revolucao-dos-bichos.pdf"download><button class="butt">Ler</button></a>
-                                                                </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/iliada.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">ilíada</h2>
+                                <h3>Homero</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Poesia/Épico</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
-                                                                <div class="lib">
-    
-                                                                    <div class="img-lib">
-                                                                        <img src="./src/img/MemoriasPostumasDeBrasCubas.jpg" alt="foto" class="imagem">
-                                                                    </div>
-                                                    
-                                                                
-                                                                        <div class="titulo">
-                                                                            <h2 class="principal">Memórias Póstumas de Brás Cuba</h2>
-                                                                            <h3>Machado de Assis</h3>
-                                                                            <h4>Gratuito</h4>
-                                                                        </div>
-                                                                        <p class="parag">Romance/terror</p>
-                                                                            <a href=""><button class="butt">Ler</button></a>
-                                                                    </div>
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/platao-a-republica.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">A República</h2>
+                                <h3>Platão</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Fiçção Utópica</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/OsMiseraveis.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">Os Miseráveis</h2>
+                                <h3>Victor Hugo</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Romance/Tragédia</p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                        <div class="card-imagem">
+                            <img src="./src/img/MemoriasPostumasDeBrasCubas.jpg" alt="foto" class="retrato">
+                        </div>
+            
+                            <div class="card-titulo">
+                                <h2 class="principal">Memórias Póstumas de Brás Cubas
+                                </h2>
+                                <h3>Machado de Assis</h3>
+                                <h4>Gratuito</h4>
+                            </div>
+                            <p class="parag">Romance/Fiçção
+                            </p>
+                                <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
 
 
             
-        </div>
-<!-- 
-       <footer> 
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">]
-            <img src="" alt="">
-        </div>
-       </footer> -->
+
+            <!-- 
+                   <footer>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">]
+                <img src="" alt="">
+            </div>
+                   </footer> -->
+        </section>
 
     </main>
-  
+        
     
 </body>
 </html>

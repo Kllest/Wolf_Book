@@ -1,8 +1,7 @@
-main{
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
 
+*{
+    margin: 0;
+    padding: 0;
 }
 
 .cabecalho{
@@ -12,82 +11,89 @@ main{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 4%;
+    height: 100px;     
 }
-.list-sobre, a{
-    list-style-type: none;
-    text-decoration: none;
-    color: orange;
+.list-sobre, #um,#dois,#tres{
+  
     font-family: 'Roboto Condensed';
     display: flex;
     justify-content:space-between ;
     font-size: 25px;
+    width: 60%; 
+    align-items: center;
+    margin: auto;
+    gap: 5px;
+}
+li{
+    list-style-type: none;
+   
+}
+
+#um, #dois, #tres{
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    text-decoration: none;
+    color: orange;
 }
 
 
-.text1{
-    box-sizing: border-box;
-    width: 80%;
-    /*background-color: aqua;*/
-    font-size: 25px;
-    margin-left:  10%;
-    height: 250px;
-    font-family: ariel;
 
+.text0{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  
 }
-.text2{
-    box-sizing: border-box;
-    width: 80%;
-    /*background-color: aqua;*/
-    font-size: 25px;
-    margin-left:  10%;
-    height: 250px;
-    font-family: ariel;
-}
-.text3{
-    box-sizing: border-box;
-    width: 80%;
-    /*background-color: aqua;*/
-    font-size: 25px;
-    margin-left:  10%;
-    height: 250px;
-    font-family: ariel;
-}
-.text4{
-    box-sizing: border-box;
-    width: 80%;
-    /*background-color: aqua;*/
-    font-size: 25px;
-    margin-left:  10%;
-    height: 250px;
-    font-family: ariel;
-    padding-bottom: 15px;
-}
-.hp{
+
+
+/*  */
+/* .hp{
     text-align: center;
     box-sizing: border-box;
-    padding-top: 20px;
+    margin: 20px;
     padding-bottom: 15px;
+    
 }
 .hs{
     text-align: center;
     box-sizing: border-box;
-    padding-top: 90px;
+    margin: 20px;
     padding-bottom: 15px;
 }
 .ht{
     text-align: center;
     box-sizing: border-box;
-    padding-top: 118px;
+    padding-top: 20px;
     padding-bottom: 15px;
 }
 .hq{
     text-align: center;
     box-sizing: border-box;
-    padding-top: 124px;
+    margin-top: 20px;
     padding-bottom: 15px;
+} */
+.h{
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    color: orange;
+    
 }
-section{
-    /*background-color: blue;*/
+
+
+article{
+    margin: auto;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
 }
+.lobo-marca{
+    width: 100px;
+    height: 100px;
+}
+footer{
+    background-color: black;
+}
+
+
 
