@@ -66,6 +66,9 @@
     box-shadow: 2px 10px 15px #181818;
     transform: translateY(-10px);  
 }
+.segunda{
+    z-index: 1;
+}
 
 
 /* aqui é a estilização do formulario */
@@ -136,6 +139,4 @@ button:disabled{
     cursor: not-allowed;
     background: #705600;
 }
-.segunda{
-    display: none;
-}
+

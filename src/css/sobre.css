@@ -47,6 +47,14 @@ li{
 }
 
 
+#icon_menu{
+    display: none;
+}
+.primiro{
+    position: relative;
+}
+
+
 /*  */
 /* .hp{
     text-align: center;
@@ -82,6 +90,7 @@ li{
 }
 
 
+
 article{
     margin: auto;
     width: 80%;
@@ -93,6 +102,110 @@ article{
 }
 footer{
     background-color: black;
+    color: orange;
+    display: flex;
+    padding: 30px;
+}
+.list-footer > hr{
+    width: 300px;
+    border-color: orangered;
+    border: 3px solid;
+}
+.list-footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.list-footer a:hover{
+    color: orange;
+}
+.list-footer li{
+    padding: 10px;
+}
+
+.log{
+   width: 50%;
+}
+
+@media screen and (max-width: 600px){
+    header{
+        width: 100%;
+    }
+    #icon_menu{
+        display: block;
+        
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+        #Menu {
+            border: 1px solid black;
+            border-top: none;
+            position: absolute;
+            top: 100px;
+            right: 0;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index: 2;
+            text-align: center;
+        }
+        
+                 #Menu {
+                     display: none;
+                 }
+
+    .list-sobre{
+        flex-direction: column;
+        border-top: none;
+        
+    }
+        .list-sobre .item {
+            border: 1px solid black;
+            border-top: none;
+            
+            width: 100%;
+           
+        }
+    
+        .list-sobre > .item:hover {
+            background: black;
+
+        }
+        .list .list-sobre{
+            width: 100%;
+            position: absolute;
+            gap: 0px;
+        }
+      
+       #um, #dois, #tres{
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        margin-top: 30px;
+        height: 50px;
+    
+       }
+       .segunda{
+        display: none;
+       }
+
+           .list-footer{
+            width: 50%;
+            margin-top: 20px;
+           
+           }
+           
+           footer{
+            flex-direction: column;
+            width: 100%;
+           }
+       .log{
+        width: 100%;
+       }
+                
 }
 
 

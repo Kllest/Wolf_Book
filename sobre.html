@@ -17,6 +17,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 <header class="cabecalho">
@@ -25,17 +29,47 @@
     </div>
         <nav class="list">
 
-            <ul class="list-sobre" >
-                <li >
-                    <a href="#pagina1" id="um">Nossa historia</a>
-                </li>
-                <li >
-                    <a href="#pagina2" id="dois">Contatos</a>
-                </li>
-                <li >
-                    <a href="#pagina3" onclick="loadContent('autores.html')" id="tres">Autores</a>
-                </li>
-            </ul>
+            <script defer>
+                function clickMenu() {
+                    if (Menu.style.display == 'block') {
+                        Menu.style.display = 'none'
+                    } else {
+                        Menu.style.display = 'block'
+                    }
+                }
+
+                
+            </script>
+            <script>
+              
+                function clique(){
+                    if (window.innerWidth <= 600) {
+                            if(um || dois){
+                            Menu.style.display = 'none'
+                        }
+                    }
+                    
+                }
+            </script>
+
+            <span class="material-symbols-outlined"  id="icon_menu" onclick="clickMenu()" mouseup="clicksair()">
+                menu
+            </span>
+
+            <menu id="Menu">
+                <ul class="list-sobre" >
+                    <li class="item">
+                        <a href="#pagina1" id="um" onclick="clique()">Nossa historia</a>
+                    </li>
+                    <li class="item">
+                        <a href="#pagina2" id="dois" onclick="clique()">Contatos</a>
+                    </li>
+                    <li class="item">
+                        <a href="#pagina3"  id="tres" onclick="clique()">Autores</a>
+                    </li>
+                </ul>
+                
+            </menu>
         </nav>
 </header>
 <main>
@@ -113,7 +147,7 @@
                     <h2>GitHub</h2>
                     <div class="content">
                         <p >Entre em contato pelo nosso GitHub</p>
-                        <a href="" id="link">Acessar</a>
+                        <a href="https://github.com/Kllest" target="_blank" id="link">Acessar</a>
                     </div>
                 </div>
                 <div class="card">
@@ -169,9 +203,11 @@
                             <div class="color-div">
                                 <h2 class="nome">Emmanuelle</h2>
                                 <hr>
-                                <p  class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti, nobis similique obcaecati
-                                    tempora enim facilis fuga accusantium sit. Libero provident nam non asperiores cupiditate
-                                    perferendis dolores, aliquam error ipsam!</p>
+                                <p  class="info"><em>
+                                    "Me chamo Emmanuelle Ghrislane Souza Pires, tenho 19 anos e faço parte da programação do site. Esse projeto propõe a
+                                    leitura em seu formato digital como uma alternativa compacta de levar suas sobras favoritas sem ocupar muito espaço
+                                    físico, visando também a redução do uso de papeis o que contribui para a preservação do meio ambiente."
+                                </em></p>
                             </div>
                         </div>
                     </div>
@@ -204,12 +240,14 @@
                                 <h2 class="nome">Viviane</h2>
                                 <hr>
                                 <em>
-                                    <p  class="info">"Meu nome é Viviane de Assis Ramos, tenho 18 anos e faço parte da equipe de Mídia Social e
-                                        Publicidade deste projeto. Este projeto tem um significado especial para mim, pois me permite
-                                        demonstrar meu desempenho ao longo da minha vida. É uma jornada com um começo e um fim, uma
-                                        experiência única que, mesmo com obstáculos e complicações ao longo do caminho, não me fez
-                                        desistir do desenvolvimento do Wolf Book. No final, é sobre garantir que tudo dê certo para que,
-                                        no fim de tudo, possamos concluir esta jornada juntos."</p>
+                                    <p  class="info"><em>
+                                        "Meu nome é Viviane de Assis Ramos, tenho 18 anos e faço parte da equipe de Mídia Social e
+                                            Publicidade deste projeto. Este projeto tem um significado especial para mim, pois me permite
+                                            demonstrar meu desempenho ao longo da minha vida. É uma jornada com um começo e um fim, uma
+                                            experiência única que, mesmo com obstáculos e complicações ao longo do caminho, não me fez
+                                            desistir do desenvolvimento do Wolf Book. No final, é sobre garantir que tudo dê certo para que,
+                                            no fim de tudo, possamos concluir esta jornada juntos."
+                                    </em></p>
                                 </em>
                             </div>
                         </div>
@@ -239,11 +277,13 @@
                                 <h2 class="nome">Carlos</h2>
                                 <hr>
                                 <em>
-                                    <p  class="info">"Me chamo Carlos Eduardo do Nascimento Carneiro, tenho 18 anos e sou o Designer Gráfico deste
-                                        projeto. Este projeto marca o fim e o início de um novo ciclo em minha vida. Apesar dos diversos
-                                        problemas que surgiram durante a sua criação, não vou desistir e continuarei a lutar e me
-                                        esforçar para que tudo isso valha a pena no final, garantindo que o projeto seja bem-sucedido e
-                                        nos proporcione coisas boas em nosso futuro."</p>
+                                    <p  class="info"><em>
+                                        "Me chamo Carlos Eduardo do Nascimento Carneiro, tenho 18 anos e sou o Designer Gráfico deste
+                                            projeto. Este projeto marca o fim e o início de um novo ciclo em minha vida. Apesar dos diversos
+                                            problemas que surgiram durante a sua criação, não vou desistir e continuarei a lutar e me
+                                            esforçar para que tudo isso valha a pena no final, garantindo que o projeto seja bem-sucedido e
+                                            nos proporcione coisas boas em nosso futuro."
+                                    </em></p>
                                 </em>
                             </div>
                         </div>
@@ -258,10 +298,12 @@
                                 <h2 class="nome">Victória</h2>
                                 <hr>
                                 <em>
-                                    <p  class="info">"Sou a Victória, tenho 17 anos, e minha função no projeto é auxiliar na contribuição para a
-                                        redação do trabalho (na área de pesquisa e informação). Este projeto é importante para mim, pois
-                                        proporciona diversas experiências. Tem como objetivo demonstrar a relevância do site e suas
-                                        vantagens, visando o desenvolvimento da leitura de forma mais eficaz."</p>
+                                    <p  class="info"><em>
+                                        "Sou a Victória, tenho 17 anos, e minha função no projeto é auxiliar na contribuição para a
+                                            redação do trabalho (na área de pesquisa e informação). Este projeto é importante para mim, pois
+                                            proporciona diversas experiências. Tem como objetivo demonstrar a relevância do site e suas
+                                            vantagens, visando o desenvolvimento da leitura de forma mais eficaz."
+                                    </em></p>
                                 </em>
                             </div>
                         </div>
@@ -269,16 +311,18 @@
                     <div class="container">
                         <div class="itens">
                             <div class="foto">
-                                <img src="./src/img/victoria-img.jpeg" alt="foto" class="im">
+                                <img src="./src/img/anny-img2.jpeg" alt="foto" class="im">
                             </div>
                     
                     
                             <div class="color-div">
-                                <h2 class="nome">emanuelli</h2>
+                                <h2 class="nome">Anny</h2>
                                 <hr>
-                                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti, nobis similique obcaecati
-                                    tempora enim facilis fuga accusantium sit. Libero provident nam non asperiores cupiditate
-                                    perferendis dolores, aliquam error ipsam!</p>
+                                <p class="info"><em>
+                                    "Sou a Anny Camylli Carvalho dos Santos, tenho 19 anos e nesse trabalho faço parte do desenvolvimento do site na programação e design gráfico.Esse projeto foi muito importante para o meu desenvolvimento na área de programação. Trabalhar nele me ajudou a
+                                    desenvolver novas habilidades e expandir meu conhecimento.Ele tem um grande significado para mim, já que os dias e horas que dediquei à programação resultaram nesse projeto, que
+                                    acabou sendo bem-sucedido."
+                                </em></p>
                             </div>
                         </div>
                     </div>
@@ -289,15 +333,49 @@
         </section>
 </main>
 <footer>
-    lll
-    lll
-    ll
+    <div><img src="./src/img/bico-preto2-semfundo.png" alt="" class="log"></div>
+   <ul>
+    <li class="list-footer">
+        Sobre
+        <hr>
+        <ul>
+            <li><a href="">historia</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Autores</a></li>
+        </ul>
+    </li>
+   </ul>
+
+    <ul class="footer">
+        <li class="list-footer">
+            Informações
+            <hr>
+            <ul>
+                <li><a href="">Github</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="footer">
+        <li class="list-footer">
+            Inicio
+            <hr>
+            <ul class="footer">
+                <li><a href="">Livros</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Resenha</a></li>
+            </ul>
+        </li>
+    </ul>
 </footer>
 
 <script src="./src/js/script.js">
 </script>
 <script src="./src/js/sobre.js"></script>
 <script src="ligacao-section"></script>
+
 
 </main>
 </body>

@@ -64,4 +64,24 @@
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
-footer
+@media screen and (max-width: 600px) {
+    .info{
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        
+        
+    }
+    .color-div{
+        width: 95%;
+        height: 50%;
+    }
+    hr{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .itens{
+        height: 640px;
+    }
+}
