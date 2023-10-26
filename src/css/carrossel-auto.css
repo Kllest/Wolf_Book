@@ -1,0 +1,31 @@
+.carrossel-automatico{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    min-height: 100vh;
+}
+.carrossel{
+    box-shadow: 2px 2px 4px  rgb(94, 94, 94);
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.imagem-automatico{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+
+}
+.imagem-automatico {
+    display: none;
+}
+
+.imagem-automatico.mostrar-imagem {
+    display: block;
+}

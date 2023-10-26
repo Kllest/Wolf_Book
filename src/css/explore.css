@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+
+.container {
+height: 1200px;
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+/* width: 100%; */
+margin: 0;
+justify-content: center;
+width: 80%;
+margin: auto;
+}
+
+
+.card {
+    background: white;
+    width: 210px;
+    height: 495px;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.retrato {
+    width: 150px;
+    height: 250px;
+    margin-top: 15px;
+}
+
+.card-imagem {
+    height: 260px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-itens {
+    color: black;
+    height: 380px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-titulo {
+    margin-top: 10px;
+    padding: 7px;
+    max-width: 100%;
+    height: 120px;
+    overflow: hidden;
+
+
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin: 2px;
+    font-size: 15px;
+    color: orangered;
+}
+
+h2 {
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+p {
+    padding: 10px;
+}
+.principal{
+    margin: 0;
+}
+
+.botao {
+    background: orange;
+    width: 180px;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    color: white;
+}
+
+.botao:hover {
+    background-color: orangered;
+}
+
+/* .carrossel{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    object-fit: cover;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 400px;
+} */
+img{
+    width: 450px;
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    background: black;
+    height: 400px;
+    position: relative;
+ 
+}
+
+.texto{
+    text-align: center;
+    width: 500px;
+    text-align: right;
+    color: white;
+   padding: 2px;
+ 
+ 
+ 
+}
+.caixa{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 60px;
+}
+h1{
+    color: orangered;
+    margin-bottom: 7px;
+}
+
+.capa{
+    width: 100%;
+ 
+    width: 100%;
+    height: 400px;
+       
+}
+.logo{
+    width: 180px;
+    margin: 0;
+    
+}
+.voltar a{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    width: 100%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+.voltar > a{
+    width: 30px;
+}
+/* carorel automatico */
+
+.carrossel-automatico {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+ 
+    min-height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+   
+}
+
+.carrossel {
+    border: 5px solid rgb(255, 255, 255);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    overflow: hidden;
+    height: 400px;
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.imagem-automatico {
+    object-fit: cover;
+    height: 450px;
+    width: 500px;
+
+}
+
+.imagem-automatico {
+    display: none;
+    
+}
+
+.imagem-automatico.mostrar-imagem {
+    display: block;
+}
+@media screen and (max-width: 600px){
+    
+        .carrossel-automatico{
+            display: none;
+        }
+        .texto{
+            margin-top: 100px;
+            width: 300px;
+            position: absolute;
+            font-size: 10px;
+            height: 200px;
+        }
+                .container{
+                    background: blue;
+                    width: 100%;
+                }
+                .card{
+                    width: 180px;
+                    height: 600;
+                }
+    
+    
+}
