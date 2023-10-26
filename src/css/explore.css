@@ -218,23 +218,57 @@ h1{
 @media screen and (max-width: 600px){
     
         .carrossel-automatico{
-            display: none;
+            position: absolute;
+            opacity: 0.3;
+           
+        }
+        
+        .logo{
+            position: absolute;
+            z-index: 2;
+            
+        }
+        header{
+            width: 100%;
         }
         .texto{
-            margin-top: 100px;
-            width: 300px;
+           
+            width: 380px;
             position: absolute;
             font-size: 10px;
             height: 200px;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+    
         }
+        .caixa{
+           
+            margin: auto;
+        }
+        .texto{
+            margin-top: 100px;
+        }
+        
                 .container{
-                    background: blue;
+                
                     width: 100%;
+                    height: 2100px;
+                   
+                    
                 }
                 .card{
                     width: 180px;
                     height: 600;
+                    padding: 0;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 }
-    
+                .card:hover{
+                    transform: none;
+                }
+                .botao{
+                    width: 150px;
+                }
     
 }
