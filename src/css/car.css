@@ -42,7 +42,8 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-   
+   text-align: center;
+   color: rgb(58, 58, 58);
     padding: 0 35px;
 }
 

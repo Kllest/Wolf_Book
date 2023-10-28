@@ -39,6 +39,7 @@ function setupCarousel(carouselContainerId) {
 }
 
 // Chame a função para configurar os carrosséis desejados
+setupCarousel("carousel3");
 setupCarousel("carousel1");
 setupCarousel("carousel2");
 setupCarousel("carousel");
