@@ -253,14 +253,14 @@ h1{
         
                 .container{
                 
-                    width: 100%;
+                    width: 80%;
                     height: 4300px;
                    
                     
                 }
                 .card{
-                    width: 180px;
-                    height: 500px;
+                    width: 210px;
+                    height: 495px;
                     padding: 0;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 }

@@ -49,4 +49,30 @@ a{
 }
 img{
     margin: auto;
+    width: 200px;
+    height: 300px;
 }
+@media screen and (max-width: 600px) {
+    img{
+        width: 100px;
+        height: 150px;
+    }
+    #sinopse p{
+        /* width: 300px; */
+        
+    }
+    .resenha{
+        width: 100%;
+    }
+    section{
+        margin: auto;
+    }
+    .texto{
+       display: none;
+    }
+    .trecho{
+        width: 300px;
+        height: 440px;
+        overflow: auto;
+    }
+    }

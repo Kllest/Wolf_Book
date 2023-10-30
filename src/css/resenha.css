@@ -83,5 +83,6 @@ h2, p{
     }
     ul{
         margin: 0;
+        text-align: left;
     }
 }
