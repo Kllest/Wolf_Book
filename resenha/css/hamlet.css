@@ -54,8 +54,12 @@ img{
 }
 @media screen and (max-width: 600px) {
     img{
+        
         width: 100px;
-        height: 150px;
+        height: 200px;
+    }
+    .imagem{
+        margin-top: 40px;
     }
     #sinopse p{
         /* width: 300px; */
@@ -63,16 +67,45 @@ img{
     }
     .resenha{
         width: 100%;
+        height: 900px;
     }
     section{
         margin: auto;
     }
-    .texto{
-       display: none;
+    .sinopse{
+       width: 100%;
+       height: 250px;
+       overflow: auto;
+      
+       
     }
+        .texto {
+            width: 100%;
+            height: 250px;
+            overflow: auto;
+            margin-top: 40px;
+    
+    
+        }
+    
     .trecho{
         width: 300px;
         height: 440px;
         overflow: auto;
+        
+        
     }
+
+    .arrow-but button{
+        width: 100%;
+        background-color: transparent;
+        color: orange;
+        border: none;
+      
+    }
+    button:hover{
+        
+        color: rgb(0, 0, 0);
+    }
+    
     }
