@@ -3,27 +3,89 @@ body{
     margin: 0;
     padding: 0;
 }
+.ul_listagem {
+    height: 400px;
+    overflow: hidden;
+    display: none;
+    list-style: none;
+    background-color: rgb(34, 34, 34);
+    border: 15px;
+    width: 380px;
+    margin: auto;
+    border-radius: 15px;
+   position: relative;
+   z-index: 1;
+font-family: 'Poppins', sans-serif;
+
+}
+.objeto {
+    
+    align-items: center;
+    list-style: none;
+    border-radius: 15px;
+    margin: 0;
+    height: 100px;
+    display: flex;
+}
+.ul_listagem a {
+
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 340px;
+    font-size: 15px;
+}
+
+.ul_listagem a:hover {
+    background-color: black;
+}
+.search {
+
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.imagem{
+    width: 50px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+input {
+    border-radius: 15px;
+    height: 7vh;
+    width: 400px;
+    border: none;
+}
 
 
-ul{
+.cards{
     width: 80%;
     margin-bottom: 10px;
     margin: auto;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    
 }
-li{
+.lista{
     gap: 20px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 10px;
    
 }
-li{
+.lista{
     display: flex;
     align-items: center;
 }
-li a{
+.lista a{
     font-size: 20px;
     color: orange;
 }
+
 
 
 img{
@@ -31,10 +93,14 @@ img{
     height: 200px;
     margin: 10px;
 }
+.principal{
+    position: relative;
+
+}
 
 
 header{
-    display: flex;
+    /* display: flex; */
     background-color: black;
     margin: auto;
     align-items: center;
@@ -57,16 +123,8 @@ header{
     color: rgb(0, 0, 0);
     margin: 10px;
 }
-.search{
-    margin: auto;
-}
-.search input{
-    border-radius: 15px;
-    border: none;
-    border-color: solid transparent;
-    width: 500px;
-    height: 7vh;
-}
+
+
 .logo{
     width: 100px;
     height: 100px;
@@ -74,9 +132,11 @@ header{
 h2, p{
     font-size: 15px;
 }
+
+
 @media screen and (max-width: 600px){
     .search input{
-        width: 200px;
+        width: 300px;
     }
     main{
         margin: auto;
@@ -85,4 +145,28 @@ h2, p{
         margin: 0;
         text-align: left;
     }
+    .cards{
+        margin: 0px;
+        text-align: left;
+    }
+    .cards a{
+        color: orange;
+    }
+    .ul_listagem{
+        width: 300px;
+        margin-top: 5px;
+    }
+    .ul_listagem a {
+            color: white;
+        }
+        .ul_listagem a:hover {
+           color: orange;
+        }
+
+        .lista div{
+            margin-right: 30px;
+        }
+
+    
+    
 }
