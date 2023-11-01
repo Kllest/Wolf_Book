@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(238, 238, 238);
+   background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -69,12 +69,14 @@ input {
     text-align: center;
     position: relative;
     font-family: 'Poppins', sans-serif;
+   
     
 }
 .lista{
     gap: 20px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 10px;
+    border: 1px solid black;
    
 }
 .lista{
