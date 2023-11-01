@@ -121,7 +121,7 @@ main{
 .card-imagem{
     height: 260px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .card-itens{
     color: black;
@@ -142,7 +142,9 @@ h4{
     margin-top: 10px;
 }
 h3{
-    padding:0px;
+    margin: 2px;
+    font-size: 15px;
+    color: orangered;
 }
 h2{
     display: block;
