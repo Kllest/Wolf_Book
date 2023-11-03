@@ -42,7 +42,8 @@
                 search
             </span>
 
-            <input type="search" name="" id="" placeholder="Pesquisar...">
+            <input type="text" name="barra" id="barra" placeholder="Pesquisar..." onkeyup="barrap()">
+            <script src="./src/js/input.js"></script>
         </div>
             <span class="material-symbols-outlined" id="menu" onclick="clickMenu()">
                 menu
@@ -64,7 +65,7 @@
     </header>
    
     <main id="conteudo">
-        <section class="container">
+        <section class="container" id="msg">
 
             <div class="card">
                 <div class="card-itens">
@@ -261,6 +262,411 @@
                             <p class="parag">Romance/Fiçção
                             </p>
                                 <a href="./src/img/memorias-postumas-de-bras-cubas.pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/senhora.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Senhora</h2>
+                        <h3>José de Alencar</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Romance/Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_ A SENHORA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/alicenopaisdasmaravilhas.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Alice no País das Maravilhas</h2>
+                        <h3> Lewis Carroll</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_ ALICE NO PAÍS DAS MARAVILHAS.pdf"
+                        download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/primeiroscontos.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Primeiros cantos</h2>
+                        <h3> Gonçalves Dias e Letícia Malard</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_PRIMEIROS CANTOS.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/aartedaguerra.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A Arte da Guerra</h2>
+                        <h3>Sun Tzu</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Tratado/Não Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A ARTE DA GUERRA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/cartaroubada.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A Carta Roubada</h2>
+                        <h3> Edgar Allan Poe</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Conto/Mistério</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A CARTA ROUBADA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/obrascompletasdecastroalves.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Obras Completas</h2>
+                        <h3>Castro Alves</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Poético</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_COMPLETO.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/condessadevespar.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A condêssa vésper</h2>
+                        <h3>Aluísio Azevedo</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A CONDESSA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/WhatsApp Image 2023-10-26 at 11.49.56.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Úrsula e Outras Obras</h2>
+                        <h3>Maria Firmina dos Reis</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Romance</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_URSULA E OUTRAS OBRAS.pdf"
+                        download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/oraçãoaosmoços.png" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Oração aos Moços</h2>
+                        <h3>Ruy Barbosa</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Direito</p>
+                    <a href="./src/LIVROS- 128/LIVRO_ORAÇÃO AOS MOCOS.pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/o-alienista.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">O Alienista</h2>
+                        <h3> Machado de Assis</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_O ALIENISTA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/oateneu.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">O Ateneu</h2>
+                        <h3>Raul Pompeia</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Romance/Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_O ATENEU.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/luciola.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Lucíola</h2>
+                        <h3>José de Alencar</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Romance</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_LUCIOLA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/suspiros-poeticose-saudades.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Suspiros Poéticos e Saudades</h2>
+                        <h3>Gonçalves de Magalhães</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Poético</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_SUSPIROS POETICOS E SAUDADE.pdf"
+                        download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/ogaucho.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">O Gaúcho</h2>
+                        <h3>José de Alencar</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_O GAUCHO.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/eueoutraspoesias.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Eu e outras poesias</h2>
+                        <h3>Augusto dos Anjos</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Poético</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_EU E OUTRAS POESIAS.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/ojapao.png" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">O Japão</h2>
+                        <h3>Aluísio Azevedo</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Narrativo</p>
+                    <a href="./src/img/a-divina-comedia..pdf" download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/ensaios.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Ensaios Graciliânicos</h2>
+                        <h3>Vera Lúcia Lopes Dias</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ensaios literários</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_OS ENSAIOS.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/metamorfose.png" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A Metamorfose</h2>
+                        <h3>Franz Kafka</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção Absurdista</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A METAMORFOSE.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/amoreninha.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A Moreninha</h2>
+                        <h3>Joaquim Manuel de Macedo</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Épico/Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A MORENINHA.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/anormalista.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A Normalista</h2>
+                        <h3>Adolfo Caminha</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Tratado/Não Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A NORMALISTA ADOLFO CAMINHA.pdf"
+                        download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/coraçãodastrevas.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Heart of Darkness</h2>
+                        <h3>Joseph Conrad</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Conto/Mistério</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_CORAÇÃO DAS TREVAS.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/viagempoesia.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">Viagem</h2>
+                        <h3>Cecília Meireles</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Poético</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_VIAGEM.pdf" download><button
+                            class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/aroupaFazemAspesos.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">As Roupas Fazem as Pessoas</h2>
+                        <h3>Gottfried Keller</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Ficção</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_AS ROUPAS FAZEM A PESSOA.pdf"
+                        download><button class="botao">Ler</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-itens">
+                    <div class="card-imagem">
+                        <img src="./src/img/capas/aimprensadaverdade.jpeg" alt="foto" class="retrato">
+                    </div>
+            
+                    <div class="card-titulo">
+                        <h2 class="principal">A Imprensa e o Dever da Verdade</h2>
+                        <h3>Ruy Barbosa</h3>
+                        <h4>Gratuito</h4>
+                    </div>
+                    <p class="parag">Direito</p>
+                    <a href="./src/LIVROS- DM128-20231026T130734Z-001/LIVROS- DM128/LIVRO_A IMPRESA E O DEVER DA VERDADE.pdf"
+                        download><button class="botao">Ler</button></a>
                 </div>
             </div>
 

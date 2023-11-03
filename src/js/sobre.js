@@ -17,20 +17,20 @@ tres.addEventListener('mouseout', mover)
 function entrar(){
     if (window.innerWidth > 768){
         um.style.background = 'white'
-    um.style.color = 'black'
+    um.style.color = 'orange'
     }
 }
 function sobre() {
     if (window.innerWidth > 768) {
         dois.style.background = 'white'
-        dois.style.color = 'black'
+        dois.style.color = 'orange'
     }  
    
 }
 function cima() {
     if(window.innerWidth > 768){
         tres.style.background = 'white'
-        tres.style.color = 'black'
+        tres.style.color = 'orange'
 
     }
    

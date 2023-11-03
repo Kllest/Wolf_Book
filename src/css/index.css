@@ -90,7 +90,8 @@ main{
 
 /*cards*/
 .container{
-  
+    
+    max-height: 1580px;
     width: 80%;
     display: flex;
     margin: 20px;
@@ -106,7 +107,8 @@ main{
     background: white;
     width: 210px;
     height: 495px;
-    margin: 10px;   
+    margin: 10px;  
+    list-style: none; 
 }
 .card:hover{
         transform: translateY(-10px);

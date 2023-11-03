@@ -10,6 +10,7 @@ function barrap() {
         } else {
             x[i].style.display = "list-item"
         }
+        
     }
 
 }
