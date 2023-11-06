@@ -1,0 +1,36 @@
+
+.lobo-marca {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: black;
+    color: orange;
+    display: flex;
+    padding: 30px;
+}
+
+.list-footer>hr {
+    width: 300px;
+    border-color: orangered;
+    border: 3px solid;
+}
+
+.list-footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.list-footer a:hover {
+    color: orange;
+}
+
+.list-footer li {
+    padding: 10px;
+}
+
+.log {
+    width: 50%;
+}

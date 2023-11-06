@@ -52,10 +52,10 @@ init(){
 
 }
 
-const FormSubmit = new FormSubmit({
-    form: "[data-form]",
-    button: "[data-button]",
-    success: "<h1 class='sucesso'>Mensagem enviada com sucesso!</h1>",
-    error: "<h1 class='error'>Não foi possível enviar sua mensagem</h1>",
-});
-FormSubmit.init();
+// const FormSubmit = new FormSubmit({
+//     form: "[data-form]",
+//     button: "[data-button]",
+//     success: "<h1 class='sucesso'>Mensagem enviada com sucesso!</h1>",
+//     error: "<h1 class='error'>Não foi possível enviar sua mensagem</h1>",
+// });
+// FormSubmit.init();
