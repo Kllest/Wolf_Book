@@ -19,14 +19,18 @@
     display: flex;
     justify-content:space-between ;
     font-size: 25px;
-    width: 60%; 
     align-items: center;
     margin: auto;
-    gap: 5px;
+    gap: 2px;
+    width: 300px;
 }
+
 li{
     list-style-type: none;
    
+}
+#Menu{
+    width: 100%;
 }
 
 #um, #dois, #tres{
@@ -127,7 +131,7 @@ footer{
    width: 50%;
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
     header{
         width: 100%;
     }
@@ -207,6 +211,7 @@ footer{
        }
                 
 }
+
 
 
 
