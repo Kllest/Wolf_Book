@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;     
+    height: 20vh;     
 }
 .list-sobre, #um,#dois,#tres{
   
@@ -35,8 +35,8 @@ li{
 
 #um, #dois, #tres{
     cursor: pointer;
-    width: 150px;
-    height: 100px;
+    width: 161px;
+    height: 121px;
     text-decoration: none;
     color: orange;
 }
@@ -127,9 +127,25 @@ footer{
     padding: 10px;
 }
 
-.log{
-   width: 50%;
+#seta{
+    display: flex;
+    width: 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    
 }
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
 
 @media (max-width: 600px){
     header{
@@ -148,10 +164,10 @@ footer{
             border: 1px solid black;
             border-top: none;
             position: absolute;
-            top: 100px;
+            top: 94px;
             right: 0;
             height: 100%;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(22, 22, 22);
             z-index: 2;
             text-align: center;
         }
@@ -174,7 +190,7 @@ footer{
         }
     
         .list-sobre > .item:hover {
-            background: black;
+            background: rgb(255, 255, 255);
 
         }
         .list .list-sobre{
@@ -210,6 +226,237 @@ footer{
         width: 100%;
        }
                 
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+
+    #icon_menu {
+        display: block;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #Menu {
+        border: 1px solid black;
+        border-top: none;
+        position: absolute;
+        top: 94px;
+        right: 0;
+        height: 100%;
+    background-color: rgb(22, 22, 22);
+        z-index: 2;
+        text-align: center;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    .list-sobre {
+        flex-direction: column;
+        border-top: none;
+
+    }
+
+    .list-sobre .item {
+        border: 1px solid black;
+        border-top: none;
+
+        width: 100%;
+
+    }
+
+    .list-sobre>.item:hover {
+        background: rgb(255, 255, 255);
+
+    }
+
+    .list .list-sobre {
+        width: 100%;
+        position: absolute;
+        gap: 0px;
+    }
+
+    #um,
+    #dois,
+    #tres {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        margin-top: 30px;
+        height: 50px;
+
+    }
+
+    .segunda {
+        display: none;
+    }
+
+    .list-footer {
+        width: 50%;
+        margin-top: 20px;
+
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .log {
+        width: 100%;
+    }
+
+    .primeiro {
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 560px;
+
+    }
+
+    .color-div {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .info {
+        width: 80%;
+        margin: auto;
+    }
+
+    .itens {
+        width: 100%;
+        min-height: 530px;
+    }
+
+    .terceiro {
+        width: 100%;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+    }
+
+    #icon_menu {
+        display: block;
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #Menu {
+        border: 1px solid black;
+        border-top: none;
+        position: absolute;
+        top: 93px;
+        right: 0;
+        height: 100%;
+        background-color: rgb(22, 22, 22);
+        z-index: 2;
+        text-align: center;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    .list-sobre {
+        flex-direction: column;
+        border-top: none;
+
+    }
+
+    .list-sobre .item {
+        border: 1px solid black;
+        border-top: none;
+
+        width: 100%;
+
+    }
+
+    .list-sobre>.item:hover {
+        background: rgb(255, 255, 255);
+
+    }
+
+    .list .list-sobre {
+        width: 100%;
+        position: absolute;
+        gap: 0px;
+    }
+
+    #um,
+    #dois,
+    #tres {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        margin-top: 30px;
+        height: 50px;
+
+    }
+
+    .segunda {
+        display: none;
+    }
+
+    .list-footer {
+        width: 50%;
+        margin-top: 20px;
+
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .log {
+        width: 100%;
+    }
+
+    .container {
+
+        width: 560px;
+
+    }
+
+    .color-div {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .info {
+        width: 80%;
+        margin: auto;
+    }
+
+    .itens {
+        width: 100%;
+        min-height: 530px;
+    }
+
+    .terceiro {
+        width: 100%;
+    }
 }
 
 

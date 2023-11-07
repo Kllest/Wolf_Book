@@ -15,20 +15,20 @@ dois.addEventListener('mouseout', fora)
 tres.addEventListener('mouseout', mover)
 
 function entrar(){
-    if (window.innerWidth > 800){
+    if (window.innerWidth > 1025){
         um.style.background = 'white'
     um.style.color = 'orange'
     }
 }
 function sobre() {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1025) {
         dois.style.background = 'white'
         dois.style.color = 'orange'
     }  
    
 }
 function cima() {
-    if(window.innerWidth > 800){
+    if (window.innerWidth > 1025){
         tres.style.background = 'white'
         tres.style.color = 'orange'
 
@@ -37,21 +37,21 @@ function cima() {
 }
 
 function sair() {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1025) {
         um.style.background = 'black'
         um.style.color = 'orange'
     }
     
 }
 function fora() {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1025) {
         dois.style.background = 'black'
         dois.style.color = 'orange'
     }
    
 }
 function mover() {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1025) {
 
       tres.style.background = 'black'
         tres.style.color = 'orange'  
