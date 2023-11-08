@@ -164,7 +164,7 @@ footer{
             border: 1px solid black;
             border-top: none;
             position: absolute;
-            top: 94px;
+            top: 20%;
             right: 0;
             height: 100%;
             background-color: rgb(22, 22, 22);
@@ -246,11 +246,11 @@ footer{
         border: 1px solid black;
         border-top: none;
         position: absolute;
-        top: 94px;
+        top: 20%;
         right: 0;
         height: 100%;
     background-color: rgb(22, 22, 22);
-        z-index: 2;
+       width: 100%;
         text-align: center;
     }
 
@@ -365,7 +365,7 @@ footer{
         border: 1px solid black;
         border-top: none;
         position: absolute;
-        top: 93px;
+        top: 20%;
         right: 0;
         height: 100%;
         background-color: rgb(22, 22, 22);
