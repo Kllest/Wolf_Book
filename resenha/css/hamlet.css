@@ -7,7 +7,7 @@ body{
     width: 90%;
    background-color: white;
     margin: auto;
-    height: 750px;
+    height: 800px;
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -61,9 +61,7 @@ img{
     .imagem{
         margin-top: 40px;
     }
-    #sinopse p{
-        /* width: 300px; */
-        
+     
     }
     .resenha{
         width: 100%;
@@ -108,4 +106,35 @@ img{
         color: rgb(0, 0, 0);
     }
     
+ @media (min-width: 601px) and (max-width: 768px){
+            .resenha{
+                width: 100%;
+            }
+            .trecho{
+                width: 80%;
+                overflow: hidden;
+                overflow: auto;
+            }
+            .sinopse{
+                width: 100%;
+                overflow: hidden;
+                height: 300px;
+                overflow: auto;
+            }
+        }
+@media (min-width: 769px) and (max-width: 1024px){
+    .trecho{
+        width: 80%;
+        overflow: hidden;
+        overflow: auto;
     }
+    .resenha{
+        width: 100%;
+    }
+    .sinopse{
+        width: 100%;
+        overflow: hidden;
+        height: 250px;
+        overflow: auto;
+    }
+}
