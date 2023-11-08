@@ -193,7 +193,7 @@ p{
         border-top: none;
         width: 100%;
         position: absolute;
-        top: 120px;
+        top: 170px;
         z-index: 2;
         right: 0;
         height: 100%;
@@ -281,7 +281,7 @@ p{
                       border-top: none;
                       width: 100%;
                       position: absolute;
-                      top: 95px;
+                    top: 150px;
                       right: 0;
                       height: 100%;
                       background-color: rgb(22, 22, 22);
@@ -338,7 +338,7 @@ p{
 }
 @media (min-width: 769px) and (max-width: 1024px){
     header{
-        padding: 30px;
+        width: 100%;
     }
     .card {
             width: 210px;
@@ -356,7 +356,8 @@ p{
         }
                  #menu {
                      display: block;
-                     margin-right: 40px;
+                     margin-right: 25px;
+                     
                  }
         
                  #Menu {
@@ -364,12 +365,14 @@ p{
                      border-top: none;
                      width: 100%;
                      position: absolute;
-                    
-                     right: 0;
+                     
+                    top: 190px;
+                     
                      height: 100%;
                 background-color: rgb(22, 22, 22);
         
                  }
+                 
         
                  #Menu {
                      display: none;
